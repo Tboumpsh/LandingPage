@@ -16,7 +16,7 @@ body {
 }
 
 #menu {
-    padding: 2%;
+    padding: 2% 4%;
     background: rgba(254, 254, 254, 1);
 
     height: 30px;
@@ -104,4 +104,71 @@ body {
     border: 1.5px 0px 0px 0px !important;
     background: unset !important;
 
+}
+
+.headContent {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:75%;
+    padding: 1%;
+    height: 500px;
+    gap: 30px;
+
+}
+
+.leftContent {
+    width: 45%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.rightContent {
+    width: 45%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 35px;
+}
+.rightContent > .title > h2 {
+ font-size: 40px;
+ margin: 0;
+}
+.rightContent >.paragraph {
+/* margin-bottom: 5%; */
+}
+.rightContent > button {
+width: 236px;
+height: 60px;
+border-radius: 8px;
+border: none;
+outline: none;
+background: rgba(31, 75, 175, 1);
+}
+
+.leftContent>.image {
+    background-image: url('images/group195.png');
+    background-repeat: no-repeat;
+    /* background-color: aqua; */
+    height: 462px;
+    width: 100%;
+}
+.image > img{
+    float: right;
 }

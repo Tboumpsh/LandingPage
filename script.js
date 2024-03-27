@@ -424,7 +424,7 @@ It creates an ideal element for you.
   return div;
 }
 // Building a flag that the menu you see depends on
-let menu = "user";
+let menu = "public";
 /**
  * By specifying a variable and using the switch case structure, we can manually set when and what menu to display.
  * Just set the variable value with the name of the menu you want.
