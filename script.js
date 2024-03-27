@@ -17,9 +17,35 @@ sections.
 // create public menu
 function public() {
   // create main div
+  /*
+*DIV Father:
+This demon contains all the elements that the menu needs.
+Like:
+*+Rightmenu
+{
++logo
++4 (Link)
+}
+*+leftmenu
+{
++Button
+}
+And all the elements that fall into these demons
+  */
   let div = document.createElement("div");
   createID(div, "menu");
   // add in body
   document.body.prepend(div);
-  
+  // create Element
+  /*
+*Function of Element Making:
+This function works by taking the type of element and the ID and the target element in which it appears.
++This function helps to simplify and clean the code.
+    */
+  function createNode(tagName, idName, targetDiv, text) {
+    let divName = document.createElement(tagName);
+    createID(divName, idName);
+    targetDiv.append(divName);
+    divName.textContent = text;
+  }
 }
