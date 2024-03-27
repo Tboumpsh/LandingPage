@@ -397,13 +397,7 @@ It creates an ideal element for you.
   );
 
   // create menu item a
-  createA(
-    "خانه",
-    "داشبورد",
-    "مدیریت سفارشات",
-    "مدیریت سفیران",
-    "لیست جابجایی ها"
-  );
+  createA("خانه", "درخواست ها", "کلاب من", "اطلاعیه");
 
   // function create a menu
   /**
@@ -414,8 +408,8 @@ It creates an ideal element for you.
    * the first link will show the value of @param {a} requestSHOP
    * and the first link will show the value of @param {a} call.
    */
-  function createA(home, dashboard, managementShop, managementS, lists) {
-    let values = [home, dashboard, managementShop, managementS, lists];
+  function createA(home, request, myClub, notif) {
+    let values = [home, request, myClub, notif];
 
     for (let i = 0; i <= 3; i++) {
       let link = document.createElement("a");
