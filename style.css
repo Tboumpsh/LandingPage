@@ -1,20 +1,31 @@
+@import url('https://fonts.cdnfonts.com/css/iranian-sans');
+
+* {
+    font-family: 'Iranian Sans', sans-serif;
+}
+
 body {
     background-color: bisque;
+    margin: 0;
+    background: rgba(254, 254, 254, 1);
+
 }
 
 .container {
-    padding: 2%;
+    width: 100%;
 }
 
 #menu {
-    padding: 1%;
+    padding: 2%;
     background: rgba(254, 254, 254, 1);
 
-    height: 46px;
+    height: 30px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0px 8px 34px 0px rgba(114, 125, 135, 0.1);
+
 }
 
 #rightMenu {
@@ -22,16 +33,31 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: right;
-    gap: 20px;
+    gap: 30px;
 }
 
 #rightMenu>a {
     text-decoration: none;
+    color: rgba(140, 140, 140, 1);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28.17px;
+
+
+
+}
+
+#rightMenu>a:hover {
+
+    color: rgba(3, 76, 182, 1);
 }
 
 #rightMenu>img {
-    width: 50px;
-    height: 20px;
+    width: 118px;
+    height: 40px;
+    opacity: 0.9px;
+
 }
 
 #leftMenu {
@@ -39,4 +65,42 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: left;
+    gap: 10px;
+    
+}
+
+#leftMenu>button {
+    color: white;
+    width: 159px;
+    height: 48px;
+    padding: 18px 8px 18px 8px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: rgba(31, 75, 175, 1);
+    border: none;
+    outline: none;
+    line-height: 1;
+}
+
+#btnL {
+    width: 44px !important;
+    height: 44px !important;
+    padding: 20px 24px 20px 24px !important;
+    border: 1.5px solid rgba(220, 220, 220, 1) !important;
+    border-radius: 4px !important;
+    border: 1.5px 0px 0px 0px !important;
+    background: unset !important;
+
+
+}
+
+#btnR {
+    width: 44px !important;
+    height: 44px !important;
+    padding: 20px 24px 20px 24px !important;
+    border: 1.5px solid rgba(220, 220, 220, 1) !important;
+    border-radius: 4px !important;
+    border: 1.5px 0px 0px 0px !important;
+    background: unset !important;
+
 }

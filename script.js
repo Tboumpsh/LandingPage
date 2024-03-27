@@ -71,7 +71,7 @@ It creates an ideal element for you.
    */
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
-  createNode("button", "", leftMenu, "click");
+  createNode("button", "", leftMenu, "ورود / ثبت نام");
 
   // create image
   /**
@@ -80,10 +80,7 @@ It creates an ideal element for you.
    */
   let img = document.createElement("img");
   rightMenu.append(img);
-  img.setAttribute(
-    "src",
-    "https://pixlr.com/images/index/ai-image-generator-two.webp"
-  );
+  img.setAttribute("src", "images/logotype.png");
 
   // create menu item a
   createA("خانه", "درخواست سفیر", "درخواست خرید", "تماس با ما");
@@ -172,8 +169,8 @@ It creates an ideal element for you.
    */
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
-  createNode("button", "", leftMenu, "click");
-  createNode("button", "", leftMenu, "click");
+  createNode("button", "btnL", leftMenu, "click");
+  createNode("button", "btnR", leftMenu, "click");
 
   // create image
   /**
@@ -426,7 +423,7 @@ It creates an ideal element for you.
   return div;
 }
 // Building a flag that the menu you see depends on
-let menu = "public";
+let menu = "user";
 /**
  * By specifying a variable and using the switch case structure, we can manually set when and what menu to display.
  * Just set the variable value with the name of the menu you want.
