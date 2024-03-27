@@ -71,6 +71,18 @@ It creates an ideal element for you.
   createNode("div", "leftMenu", div);
   createNode("button", "", leftMenu, "click");
 
+  // create image
+  /**
+   * I used an IMG element to build Logo.
+   *  Then I use setAttribute to href and link the desired image.
+   */
+  let img = document.createElement("img");
+  rightMenu.append(img);
+  img.setAttribute(
+    "src",
+    "https://pixlr.com/images/index/ai-image-generator-two.webp"
+  );
+
   // create menu item a
   createA("خانه", "درخواست سفیر", "درخواست خرید", "تماس با ما");
 
