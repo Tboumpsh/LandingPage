@@ -14,6 +14,8 @@ and
 sections.
 */
 
+let contains = document.getElementById("parent");
+
 // create public menu
 function public() {
   // create main div
@@ -35,7 +37,7 @@ And all the elements that fall into these demons
   let div = document.createElement("div");
   createID(div, "menu");
   // add in body
-  document.body.prepend(div);
+  contains.prepend(div)
   // create Element
   /*
 *Function of Element Making:
@@ -438,7 +440,7 @@ switch (menu) {
     user();
     break;
   case "public":
-    publicAndSafir();
+    public()
     break;
   case "safir":
     safir();
