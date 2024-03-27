@@ -48,4 +48,17 @@ This function works by taking the type of element and the ID and the target elem
     targetDiv.append(divName);
     divName.textContent = text;
   }
+  // create ID
+  /**
+   **Functioning ID:
+This function can be made for all elements.
+By taking the name of the element
+And the name or value that ID gets
+It creates an ideal element for you.
+   * @param {divName} name 
+   * @param {idName} ids 
+   */
+  function createID(name, ids) {
+    name.id = ids;
+  }
 }
