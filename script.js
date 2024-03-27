@@ -16,5 +16,10 @@ sections.
 
 // create public menu
 function public() {
-    
+  // create main div
+  let div = document.createElement("div");
+  createID(div, "menu");
+  // add in body
+  document.body.prepend(div);
+  
 }
