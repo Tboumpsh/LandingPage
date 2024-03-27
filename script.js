@@ -105,4 +105,8 @@ It creates an ideal element for you.
       link.setAttribute("href", "#");
     }
   }
+  /**
+   * Return the DIV value of the father where all the elements are in
+   */
+  return div;
 }
