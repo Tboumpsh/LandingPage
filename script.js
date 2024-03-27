@@ -111,8 +111,6 @@ It creates an ideal element for you.
   return div;
 }
 
-
-
 // user menu
 /**
  * The page that the user sees after login.
@@ -215,7 +213,6 @@ It creates an ideal element for you.
   return div;
 }
 
-
 // Admin menu
 /**
  * This menu is management.
@@ -292,7 +289,13 @@ It creates an ideal element for you.
   );
 
   // create menu item a
-  createA("خانه", "درخواست سفیر", "درخواست خرید", "تماس با ما");
+  createA(
+    "خانه",
+    "داشبورد",
+    "مدیریت سفارشات",
+    "مدیریت سفیران",
+    "لیست جابجایی ها"
+  );
 
   // function create a menu
   /**
@@ -303,8 +306,8 @@ It creates an ideal element for you.
    * the first link will show the value of @param {a} requestSHOP
    * and the first link will show the value of @param {a} call.
    */
-  function createA(home, requestS, requestSHOP, call) {
-    let values = [home, requestS, requestSHOP, call];
+  function createA(home, dashboard, managementShop, managementS, lists) {
+    let values = [home, dashboard, managementShop, managementS, lists];
 
     for (let i = 0; i <= 3; i++) {
       let link = document.createElement("a");
