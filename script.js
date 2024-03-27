@@ -61,4 +61,13 @@ It creates an ideal element for you.
   function createID(name, ids) {
     name.id = ids;
   }
+  // create element by function
+  /**
+   **Making Base Structure Menu:
+   * It has two parts.
+   * One section on the right and the other on the left, where the Logo is in the right * part, next to 4 links.
+   */
+  createNode("div", "rightMenu", div);
+  createNode("div", "leftMenu", div);
+  createNode("button", "", leftMenu, "click");
 }
