@@ -37,7 +37,7 @@ And all the elements that fall into these demons
   let div = document.createElement("div");
   createID(div, "menu");
   // add in body
-  contains.prepend(div)
+  contains.prepend(div);
   // create Element
   /*
 *Function of Element Making:
@@ -138,7 +138,7 @@ And all the elements that fall into these demons
   let div = document.createElement("div");
   createID(div, "menu");
   // add in body
-  document.body.prepend(div);
+  contains.prepend(div);
   // create Element
   /*
 *Function of Element Making:
@@ -241,7 +241,7 @@ And all the elements that fall into these demons
   let div = document.createElement("div");
   createID(div, "menu");
   // add in body
-  document.body.prepend(div);
+  contains.prepend(div);
   // create Element
   /*
 *Function of Element Making:
@@ -349,7 +349,7 @@ And all the elements that fall into these demons
   let div = document.createElement("div");
   createID(div, "menu");
   // add in body
-  document.body.prepend(div);
+  contains.prepend(div);
   // create Element
   /*
 *Function of Element Making:
@@ -440,7 +440,7 @@ switch (menu) {
     user();
     break;
   case "public":
-    public()
+    public();
     break;
   case "safir":
     safir();

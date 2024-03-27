@@ -1,10 +1,15 @@
+body {
+    background-color: bisque;
+}
+
 .container {
     padding: 2%;
 }
 
 #menu {
     padding: 1%;
-    background-color: gray;
+    background: rgba(254, 254, 254, 1);
+
     height: 46px;
     display: flex;
     align-items: center;
