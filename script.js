@@ -219,7 +219,7 @@ It creates an ideal element for you.
  * It is related to management and tasks and access that the administrator has.
  * In this section, the menu can scroll down on the pages by clicking on the item.
  */
-function user() {
+function admin() {
   // create main div
   /*
 *DIV Father:
@@ -327,7 +327,7 @@ It creates an ideal element for you.
  * These pages are for ambassadors who are escaping to move a package or accept a custom.
  * Only ambassadors have access to this page and this section makes the ambassadors menu.
  */
-function user() {
+function safir() {
   // create main div
   /*
 *DIV Father:
@@ -422,4 +422,25 @@ It creates an ideal element for you.
    * Return the DIV value of the father where all the elements are in
    */
   return div;
+}
+// Building a flag that the menu you see depends on
+let menu = "public";
+/**
+ * By specifying a variable and using the switch case structure, we can manually set when and what menu to display.
+ * Just set the variable value with the name of the menu you want.
+ */
+
+switch (menu) {
+  case "admin":
+    admin();
+    break;
+  case "user":
+    user();
+    break;
+  case "public":
+    publicAndSafir();
+    break;
+  case "safir":
+    safir();
+    break;
 }
