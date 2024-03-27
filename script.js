@@ -169,8 +169,9 @@ It creates an ideal element for you.
    */
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
-  createNode("button", "btnL", leftMenu, "click");
-  createNode("button", "btnR", leftMenu, "click");
+  createNode("button", "btnL", leftMenu, "🔔");
+  createNode("button", "btnR", leftMenu, "🕢");
+  
 
   // create image
   /**
@@ -181,7 +182,7 @@ It creates an ideal element for you.
   rightMenu.append(img);
   img.setAttribute(
     "src",
-    "https://pixlr.com/images/index/ai-image-generator-two.webp"
+    "images/logotype.png"
   );
 
   // create menu item a
@@ -272,8 +273,8 @@ It creates an ideal element for you.
    */
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
-  createNode("button", "", leftMenu, "click");
-  createNode("button", "", leftMenu, "click");
+  createNode("button", "btnL", leftMenu, "click");
+  createNode("button", "btnR", leftMenu, "click");
 
   // create image
   /**
@@ -284,7 +285,7 @@ It creates an ideal element for you.
   rightMenu.append(img);
   img.setAttribute(
     "src",
-    "https://pixlr.com/images/index/ai-image-generator-two.webp"
+    "images/logotype.png"
   );
 
   // create menu item a
@@ -380,8 +381,8 @@ It creates an ideal element for you.
    */
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
-  createNode("button", "", leftMenu, "click");
-  createNode("button", "", leftMenu, "click");
+  createNode("button", "btnL", leftMenu, "click");
+  createNode("button", "btnR", leftMenu, "click");
 
   // create image
   /**
@@ -392,7 +393,7 @@ It creates an ideal element for you.
   rightMenu.append(img);
   img.setAttribute(
     "src",
-    "https://pixlr.com/images/index/ai-image-generator-two.webp"
+    "images/logotype.png"
   );
 
   // create menu item a
