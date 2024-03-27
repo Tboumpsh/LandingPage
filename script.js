@@ -170,6 +170,7 @@ It creates an ideal element for you.
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
   createNode("button", "", leftMenu, "click");
+  createNode("button", "", leftMenu, "click");
 
   // create image
   /**
