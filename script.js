@@ -70,4 +70,27 @@ It creates an ideal element for you.
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
   createNode("button", "", leftMenu, "click");
+
+  // create menu item a
+  createA("خانه", "درخواست سفیر", "درخواست خرید", "تماس با ما");
+
+  // function create a menu
+  /**
+   * Function Make Menu Links:
+   * In this function, it puts them into one presentation by taking two inputs
+   * The Code of a Loop to Create Four Links. In Each It of the Loop, a new link element is creating the JavaScript createElement Function. The link element is then added to the webpage, Specification to the Rightmenu. The Text Content of the Link is Set to One of the Input Values, in Order. So, the first link will show the value of @param {a} home
+   * the second link will show of @param {a} requestS
+   * the first link will show the value of @param {a} requestSHOP
+   * and the first link will show the value of @param {a} call.
+   */
+  function createA(home, requestS, requestSHOP, call) {
+    let values = [home, requestS, requestSHOP, call];
+
+    for (let i = 0; i <= 3; i++) {
+      let link = document.createElement("a");
+      rightMenu.append(link);
+      link.textContent = values[i % 4];
+      link.setAttribute("href", "#");
+    }
+  }
 }
