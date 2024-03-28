@@ -46,7 +46,3 @@ switch (menu) {
     safir();
     break;
 }
-
-/**
- *
- */
