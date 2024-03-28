@@ -1,32 +1,69 @@
+/* 
+* The styles in this project are going to be completely managed with display flex, so you might see it a lot.
+* This project has a lot of games with css and animations.
+* So don't be surprised if you see a keyframe below.
+* The styles are completely understandable and explained as much as possible.
+*IRANsans font is used in this design.
+* Added to the style using impory.
+* These styles and designs are predefined in Figma.
+*/
+
+
 @import url('https://fonts.cdnfonts.com/css/iranian-sans');
 
+/*
+*public style
+*font import
+*/
 * {
     font-family: 'Iranian Sans', sans-serif;
 }
 
+/*
+* body style
+* margin default is 0
+* color style
+*/
+
 body {
-    background-color: bisque;
     margin: 0;
     background: rgba(254, 254, 254, 1);
 
 }
 
+/*
+* container is parent element in body
+* just with set 
+*/
+
 .container {
     width: 100%;
 }
 
+/*
+* style parent menu element
+* background is deferent 
+* has shadow in bottom
+* flex display
+*/
+
 #menu {
     padding: 2% 4%;
     background: rgba(254, 254, 254, 1);
-
     height: 30px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0px 8px 34px 0px rgba(114, 125, 135, 0.1);
-
 }
+
+/*
+* The right side of the menu.
+* Contains the logo, which is a photo, and contains a number of links.
+* This section has a basic structure in all headers.
+* It has a flex display that is created with its empty gap.
+*/
 
 #rightMenu {
     display: flex;
@@ -36,6 +73,12 @@ body {
     gap: 30px;
 }
 
+/*
+* style for links
+* basic style and color customize
+* The rest of the styles are based on the given design.
+*/
+
 #rightMenu>a {
     text-decoration: none;
     color: rgba(140, 140, 140, 1);
@@ -43,22 +86,33 @@ body {
     font-size: 15px;
     font-weight: 700;
     line-height: 28.17px;
-
-
-
 }
 
+/*
+* change color when ypu hover on a.
+*/
 #rightMenu>a:hover {
-
     color: rgba(3, 76, 182, 1);
 }
+
+/**
+* logo image is customize
+*/
 
 #rightMenu>img {
     width: 118px;
     height: 40px;
     opacity: 0.9px;
-
 }
+
+/*
+* This is the right section of the menu.
+* This part has a button.
+* In the rest of the designs, it may have two buttons that are selected using btnL and btnR, which you can see below. 
+* This part has display flex.
+* We created a distance between them using gap.
+*/
+
 
 #leftMenu {
     display: flex;
@@ -66,9 +120,12 @@ body {
     flex-direction: row;
     justify-content: left;
     gap: 10px;
-
 }
 
+/* 
+* This button for public menu in public page.
+* has backgroundColor and with, height, border different
+*/
 #leftMenu>button {
     color: white;
     width: 159px;
@@ -82,6 +139,10 @@ body {
     line-height: 1;
 }
 
+/* 
+* In user, safir and admin menu style buttons
+* has border and icon
+*/
 #btnL {
     width: 44px !important;
     height: 44px !important;
@@ -91,8 +152,6 @@ body {
     border: 1.5px 0px 0px 0px !important;
     background: rgba(31, 74, 175, 0) !important;
     text-align: center;
-
-
 }
 
 #btnR {
@@ -103,72 +162,114 @@ body {
     border-radius: 4px !important;
     border: 1.5px 0px 0px 0px !important;
     background: unset !important;
-
 }
 
+/* 
+* start hero section 
+* This part consists of two sections. The right section contains two texts, a title and a button.
+* The second part, which is on the left side, contains the photos that were finalized using their position.
+* At the bottom there is a purple box that is placed on the photo. I will mention its code strategy in its own section.
+*/
 .headContent {
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+/* 
+* parent hero 
+* include all element in hero section
+* has display flex
+*/
 
 .rowContent {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width:75%;
+    width: 75%;
     padding: 1%;
     height: 500px;
     gap: 30px;
 
 }
 
+/* 
+* section left
+*/
+
 .leftContent {
     width: 45%;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
 
 }
 
+/* 
+* section left include image 
+* has position for fix
+*/
+
+.image {
+    position: relative;
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+/* 
+* include two picture 
+* parent image has position relative(is background)
+* child image has position absolute(man)
+*/
+
+.image>img {
+    position: absolute;
+}
+
+/* 
+* section right
+*/
+
 .rightContent {
     width: 45%;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 35px;
 }
-.rightContent > .title > h2 {
- font-size: 40px;
- margin: 0;
-}
-.rightContent >.paragraph {
-/* margin-bottom: 5%; */
-}
-.rightContent > button {
-width: 236px;
-height: 60px;
-border-radius: 8px;
-border: none;
-outline: none;
-background: rgba(31, 75, 175, 1);
+
+/* 
+* right section include title div
+* title div include h2
+*/
+.rightContent>.title>h2 {
+    font-size: 40px;
+    margin: 0;
 }
 
-.leftContent>.image {
-    background-image: url('images/group195.png');
-    background-repeat: no-repeat;
-    /* background-color: aqua; */
-    height: 462px;
-    width: 100%;
-}
-.image > img{
-    float: right;
+/* 
+* right section has button for login and sign up
+*/
+.rightContent>button {
+    width: 236px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(31, 75, 175, 1);
+    color: white;
 }
