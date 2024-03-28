@@ -19,11 +19,6 @@ and
 sections.
 */
 
-admin();
-publics();
-user();
-console.log(user());
-safir();
 
 // Building a flag that the menu you see depends on
 let menu = "public";
