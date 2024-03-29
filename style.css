@@ -753,14 +753,19 @@ body {
 *
 */
 
-.breakMotor{
+.breakMotor {
     height: 300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2%;
 }
-.breakMotor > img {
+
+.breakMotor>img:last-of-type {
     width: 100%;
+}
+.breakMotor>img:first-of-type {
+    align-self: flex-end;
+    animation-name: move;
 }
