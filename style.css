@@ -752,3 +752,15 @@ body {
 *
 *
 */
+
+.breakMotor{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+.breakMotor > img {
+    width: 100%;
+}
