@@ -32,6 +32,7 @@ h2 {
     font-size: 40px !important;
     font-weight: 700;
 }
+
 h1 {
     font-family: 'Morabba';
     font-size: 54px !important;
@@ -429,8 +430,11 @@ body {
 */
 
 .information>.title>h4 {
-    font-size: 30px;
+    font-size: 24px;
     margin: 0px;
+    font-family: 'Morabba';
+    font-weight: 500;
+
 }
 
 /* 
