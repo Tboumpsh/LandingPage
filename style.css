@@ -11,6 +11,23 @@
 
 @import url('https://fonts.cdnfonts.com/css/iranian-sans');
 
+
+/* @font-face {
+    font-family: 'Morabba';
+    src: url('public/font/Morabaat/Morabba-Bold.ttf');
+} */
+
+h2{
+    font-family: 'Morabba';
+    font-size: 40px !important;
+    font-weight: 700;
+}
+h1{
+    font-family: 'Morabba';
+    font-size: 54px !important;
+    font-weight: 700;
+}
+
 /*
 *public style
 *font import
@@ -261,7 +278,7 @@ body {
 * right section include title div
 * title div include h2
 */
-.rightContent>.title>h2 {
+.rightContent>.title>h1 {
     font-size: 40px;
     margin: 0;
 }
