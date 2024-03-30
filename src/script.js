@@ -55,11 +55,12 @@ window.addEventListener("scroll", startAnimation);
 
 function startAnimation() {
   let animationElement = document.getElementById("animationElement");
-  let animationOffset = window.innerHeight * 2.94; // adjust the percentage as needed
+  let animationOffset = window.innerHeight * 2.94; 
   console.log(window.innerHeight);
 
   if (getWindowOffsetTop(animationElement) > animationOffset) {
-    animationElement.style.animation = "move 18s linear"; // replace "move" with your animation name
+    animationElement.style.animation = "move 18s linear"; 
+    // move is animation name
   }
 }
 
