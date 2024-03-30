@@ -758,22 +758,60 @@ body {
     padding: 2%;
 }
 
+/* 
+* images style
+* motorcycle image
+* road image
+*/
+
 .breakMotor>img:last-of-type {
     width: 100%;
 }
+
 .breakMotor>img:first-of-type {
     align-self: flex-end;
     animation-name: move;
 }
 
+/* 
+* animation move for motorcycle
+ */
+
 @keyframes move {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    20%{
+
+    20% {
         transform: translateX(1590px);
     }
-    100%{
+
+    100% {
         transform: translateX(1590px);
     }
+}
+
+/* 
+*
+*
+* sell now
+*
+*
+*/
+
+.sell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(43, 111, 189, 0.1);
+}
+
+.map {
+    width: 96%;
+    height: 100%;
+    background-image: url('images/map.png');
+    background-repeat: no-repeat;
+
 }
