@@ -22,7 +22,6 @@ and
 sections.
 */
 
-
 // Building a flag that the menu you see depends on
 let menu = "public";
 /**
@@ -43,4 +42,32 @@ switch (menu) {
   case "safir":
     safir();
     break;
+}
+
+/**
+ ** Animation of the motor movement is based on the position of the screen.
+ ** That is, when the user reaches that level, the engine starts to move.
+ ** We were able to do this by getting the sheight of the page and the definition of an animation for the object in question.
+ ** We also used scroll to scroll.
+ */
+
+window.addEventListener("scroll", startAnimation);
+
+function startAnimation() {
+  let animationElement = document.getElementById("animationElement");
+  let animationOffset = window.innerHeight * 2.94; // adjust the percentage as needed
+  console.log(window.innerHeight);
+
+  if (getWindowOffsetTop(animationElement) > animationOffset) {
+    animationElement.style.animation = "move 18s linear"; // replace "move" with your animation name
+  }
+}
+
+function getWindowOffsetTop(element) {
+  let offsetTop = 0;
+  while (element) {
+    offsetTop += element.offsetTop;
+    element = element.offsetParent;
+  }
+  return offsetTop;
 }
