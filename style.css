@@ -1003,6 +1003,101 @@ body {
     align-items: center;
     flex-direction: column;
     height: 459px;
-    background-color: antiquewhite;
+    background: rgba(31, 31, 31, 1);
     width: 100%;
+}
+
+/* 
+* row up in footer style
+*/
+
+.rowFooterup {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 48%;
+    width: 97%;
+    padding: 1%;
+}
+
+.rowFooterup>div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    color: white;
+    gap: 12px;
+}
+
+/* 
+* divs style
+* p
+* h1
+* image
+*/
+
+.logosName {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.shortDes>p {
+    font-size: 14px;
+}
+
+.rowFooterup>div:nth-child(2)>p,
+h4 {
+    margin: 0;
+}
+
+.rowFooterup>div:nth-child(3)>h4,
+p {
+    margin: 0;
+}
+
+.rowFooterup>div:nth-child(4)>h4,
+p {
+    margin: 0;
+}
+
+
+.rowFooterup>div:nth-child(5)>h4,
+p {
+    margin: 0;
+}
+
+/*
+* row down for logos 
+*/
+.rowFooterDown {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+    width: 97%;
+    gap: 20px;
+    padding: 1% 0;
+}
+
+/*
+* copy section
+*/
+.copyR {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.copyR>p {
+    font-size: 10px;
+    color: white;
 }
