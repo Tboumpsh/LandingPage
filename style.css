@@ -320,7 +320,9 @@ body {
     width: 100%;
     height: 400px;
     bottom: 14%;
+    box-shadow: -3px 59px 34px 0px rgb(254 254 254); 
 }
+
 
 /* 
 * svg section on hero section 
@@ -834,9 +836,11 @@ body {
     0% {
         transform: translateX(1);
     }
+
     50% {
         transform: translateX(800px) translateY(15px);
     }
+
     100% {
         transform: translateX(800px) translateY(20px);
     }
