@@ -24,6 +24,11 @@
     src: url('public/font/Morabaat/Morabba-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('public/font/Roboto/RobotoCondensed-Bold.ttf');
+}
+
 /* 
 * change font for heading
 */
@@ -1035,6 +1040,7 @@ body {
     height: 459px;
     background: rgba(31, 31, 31, 1);
     width: 100%;
+
 }
 
 /* 
@@ -1049,6 +1055,7 @@ body {
     height: 48%;
     width: 97%;
     padding: 1%;
+    gap: 13px;
 }
 
 .rowFooterup>div {
@@ -1059,6 +1066,24 @@ body {
     width: 20%;
     color: white;
     gap: 12px;
+}
+
+/* 
+* title
+*/
+
+.rowFooterup>div>h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 
+* telephone
+* email
+*/
+
+.rowFooterup>div>a {
+    color: white;
 }
 
 /* 
@@ -1077,8 +1102,8 @@ body {
 
 }
 
-.shortDes>p {
-    font-size: 14px;
+.shortDes>h4 {
+    font-size: 24px;
 }
 
 .rowFooterup>div:nth-child(2)>p,
@@ -1123,8 +1148,9 @@ p {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     height: 10%;
+    border-top: 1px solid rgba(0, 0, 0, 1)
 }
 
 .copyR>p {
