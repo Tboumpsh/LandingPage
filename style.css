@@ -942,7 +942,7 @@ body {
     justify-content: left;
     width: 99%;
     height: 200px;
-    gap: 80px;
+    gap: 100px;
 }
 
 /* .rowBrands > img:nth-child(1):hover{
@@ -968,6 +968,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 150px;
 }
 
 .Relationship>h3 {
@@ -976,10 +977,32 @@ body {
     font-family: 'Morabba';
     font-weight: 500;
 }
-.rowSocial{
+
+.rowSocial {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     gap: 8px;
+}
+
+/* 
+*
+*
+* footer
+*
+*
+*/
+
+/* 
+* The footer consists of two rows that are vertical.
+* The first line is the site and logo description, and in the second line there are two logos.
+*/
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 459px;
+    background-color: antiquewhite;
+    width: 100%;
 }
