@@ -835,6 +835,13 @@ body {
     border-radius: 16px;
 }
 
+/* 
+* description:
+* h2
+* p
+* button
+*/
+
 .description {
     display: flex;
     justify-content: center;
@@ -844,15 +851,24 @@ body {
     gap: 15px;
 }
 
+/* 
+* p style
+*/
 .description>p {
     font-size: 24px;
     text-align: center;
 }
 
+/* 
+* h2 style
+*/
 .description>h2 {
     margin-bottom: 0;
 }
 
+/* 
+* button style
+*/
 .description>button {
     width: 264px;
     height: 56px;
@@ -869,6 +885,7 @@ body {
     line-height: 1;
 
 }
+
 /* 
 *
 *
@@ -876,9 +893,47 @@ body {
 *
 *
 */
-.redbreakArrow{
+.redbreakArrow {
     height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* 
+*
+*
+* all brands
+*
+*
+*/
+.brands {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+}
+.slidBrand{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+.rowBrands {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    width: 99%;
+    height: 200px;
+    gap: 80px;
+}
+/* .rowBrands > img:nth-child(1):hover{
+    background-image: url('images/Green-refahlogo.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+
+} */
