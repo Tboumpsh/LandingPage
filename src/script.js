@@ -55,7 +55,7 @@ window.addEventListener("scroll", startAnimation);
 
 function startAnimation() {
   let animationElement = document.getElementById("animationElement");
-  let animationOffset = window.innerHeight * 2.94; 
+  let animationOffset = window.innerHeight * 2.93; 
   console.log(window.innerHeight);
 
   if (getWindowOffsetTop(animationElement) > animationOffset) {

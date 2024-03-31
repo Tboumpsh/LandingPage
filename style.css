@@ -813,7 +813,20 @@ body {
     height: 100%;
     background-image: url('images/map.png');
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
 
+}
+
+.map > img{
+    width: 63px;
+    height: 58px;
+    position: relative;
+    left: 0;
+    bottom: 14%;
+    animation-name: motor;
 }
 
 /* 
