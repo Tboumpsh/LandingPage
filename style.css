@@ -820,13 +820,26 @@ body {
 
 }
 
-.map > img{
+.map>img {
     width: 63px;
     height: 58px;
     position: relative;
     left: 0;
     bottom: 14%;
     animation-name: motor;
+    animation-duration: 5s;
+}
+
+@keyframes motor {
+    0% {
+        transform: translateX(1);
+    }
+    50% {
+        transform: translateX(800px) translateY(15px);
+    }
+    100% {
+        transform: translateX(800px) translateY(20px);
+    }
 }
 
 /* 
