@@ -951,3 +951,28 @@ body {
     background-repeat: no-repeat;
 
 } */
+
+/* 
+*
+*
+* Ways of communication
+*
+*
+*/
+
+/* 
+* In this section, we have the ways of communication through social media. 
+* which includes a title and some small pictures together.
+*/
+.Relationship {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Relationship>h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-family: 'Morabba';
+    font-weight: 500;
+}
