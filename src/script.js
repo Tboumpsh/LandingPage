@@ -55,11 +55,11 @@ window.addEventListener("scroll", startAnimation);
 
 function startAnimation() {
   let animationElement = document.getElementById("animationElement");
-  let animationOffset = window.innerHeight * 2.93; 
+  let animationOffset = window.innerHeight * 2.93;
   console.log(window.innerHeight);
 
   if (getWindowOffsetTop(animationElement) > animationOffset) {
-    animationElement.style.animation = "move 18s linear"; 
+    animationElement.style.animation = "move 18s linear";
     // move is animation name
   }
 }
@@ -72,3 +72,20 @@ function getWindowOffsetTop(element) {
   }
   return offsetTop;
 }
+// let brands = document.getElementById('rowBrands')
+// brands.addEventListener('mouseover' . )
+
+let images = document.getElementsByClassName("img");
+console.log(images[0]);
+
+function getImage(index , addressChange , addressDefault) {
+  images[index].addEventListener("mouseenter", function () {
+    this.src = addressChange;
+  });
+  images[index].addEventListener("mouseleave", function () {
+    this.src = addressDefault;
+  });
+}
+
+getImage(0 , '../../images/refahlogo.png' , '../../images/Green-refahlogo.png');
+
