@@ -971,6 +971,10 @@ body {
 /*
 * Arrow slider 
 */
+/*
+* Giving a scroll on the X axis to Div Slider caused Overflow to scroll and scroll. Then the photos were displayed.
+* And then I customized it by changing the scroll styles.
+*/
 .slider {
     width: 100%;
     overflow-x: scroll;
@@ -1012,8 +1016,15 @@ body {
 
 }
 
+/* 
+* images hovering 
+* be hover image is color
+*/
+
 .rowBrands>img {
-    /* animation: slide 10s ; */
+    /* 
+    * image is gray color
+    */
     filter: grayscale(100%);
     flex-shrink: 0;
 }
@@ -1022,31 +1033,6 @@ body {
     filter: grayscale(0%);
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    20% {
-        transform: translateX(-100%);
-    }
-
-    40% {
-        transform: translateX(-200%);
-    }
-
-    60% {
-        transform: translateX(-300%);
-    }
-
-    80% {
-        transform: translateX(-400%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 /* 
 *
@@ -1217,4 +1203,122 @@ p {
 .copyR>p {
     font-size: 10px;
     color: white;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        /* background-color: blue; */
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .headContent {
+        height: 680px;
+    }
+
+    .rowContent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 102%;
+        padding: 1%;
+        height: 707px;
+        /* gap: 30px; */
+
+    }
+
+    .division {
+        display: none;
+    }
+
+    .mainContent {
+        width: 100%;
+        height: 630px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .rowDown {
+        display: none;
+    }
+
+    .rowUp {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        width: 77%;
+        border-radius: 20px;
+        padding: 2% 2%;
+        height: 412px;
+    }
+
+    .information {
+        width: 136%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .righUptMainContent>img {
+        width: 113%;
+    }
+
+    .lefUptMainContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        gap: 25px;
+    }
+
+    .propertyGroup {
+        height: 590px;
+    }
+
+    .columnRight>.up {
+        flex-direction: column;
+        padding: 4% 1%;
+    }
+
+    .columnRight>.down {
+        flex-direction: column;
+        padding: 4% 1%;
+    }
+
+    .columnLeft>.up {
+        flex-direction: column;
+        padding: 4% 1%;
+    }
+
+    .columnLeft>.down {
+        flex-direction: column;
+        padding: 4% 1%;
+    }
+
+    .values {
+        text-align: center;
+    }
+
+    .breakMotor {
+        display: none;
+    }
+
+    .sell {
+        display: none;
+    }
+
+    .rowBrands {
+        gap: 90px;
+    }
 }
