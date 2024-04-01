@@ -5,7 +5,6 @@ import { user } from "./user.js";
 import { publics } from "./public.js";
 import { admin } from "./admin.js";
 import { safir } from "./safir.js";
-import { getImage } from "./createImage.js";
 
 /** 
 **Strategy:
@@ -73,11 +72,3 @@ function getWindowOffsetTop(element) {
   }
   return offsetTop;
 }
-
-// call function getImage
-getImage(0, "/images/Green-refahlogo.png", "/images/refahlogo.png");
-getImage(1, "/images/OrangDigakala.png", "images/digikala.png");
-getImage(2, "/images/shilaOrang.png", "images/shilal.png");
-getImage(3, "/images/GreenZiKhorak.png", "images/zikhoraklogo.png");
-getImage(4, "/images/RedCleanFood.png", "images/cleanfood.png");
-getImage(5, "/images/PerpelSib.png", "images/sib.png");
