@@ -72,12 +72,18 @@ function getWindowOffsetTop(element) {
   }
   return offsetTop;
 }
-// let brands = document.getElementById('rowBrands')
-// brands.addEventListener('mouseover' . )
 
+/**
+ * Here are the black and white photos of the brand based on their class.
+ * That returns a presentation.
+ */
 let images = document.getElementsByClassName("img");
-console.log(images[0]);
-
+/**
+ * This functionality captures the images by capturing each photo and two addresses with Event.
+ * @param {imageIndex} index
+ * @param {ColorImage} addressChange
+ * @param {DefaultImage} addressDefault
+ */
 function getImage(index, addressChange, addressDefault) {
   images[index].addEventListener("mouseenter", function () {
     images[index].src = addressChange;
@@ -86,10 +92,10 @@ function getImage(index, addressChange, addressDefault) {
     images[index].src = addressDefault;
   });
 }
-
+// call function
 getImage(0, "/images/Green-refahlogo.png", "/images/refahlogo.png");
-getImage(1, "/images/Green-refahlogo.png", "images/digikala.png");
-getImage(2, "/images/Green-refahlogo.png", "images/shilal.png");
-getImage(3, "/images/Green-refahlogo.png", "images/zikhoraklogo.png");
-getImage(4, "/images/Green-refahlogo.png", "images/cleanfood.png");
-getImage(5, "/images/Green-refahlogo.png", "images/sib.png");
+getImage(1, "/images/OrangDigakala.png", "images/digikala.png");
+getImage(2, "/images/shilaOrang.png", "images/shilal.png");
+getImage(3, "/images/GreenZiKhorak.png", "images/zikhoraklogo.png");
+getImage(4, "/images/RedCleanFood.png", "images/cleanfood.png");
+getImage(5, "/images/PerpelSib.png", "images/sib.png");
