@@ -5,6 +5,7 @@ import { user } from "./user.js";
 import { publics } from "./public.js";
 import { admin } from "./admin.js";
 import { safir } from "./safir.js";
+import { getImage } from "./createImage.js";
 
 /** 
 **Strategy:
@@ -73,26 +74,7 @@ function getWindowOffsetTop(element) {
   return offsetTop;
 }
 
-/**
- * Here are the black and white photos of the brand based on their class.
- * That returns a presentation.
- */
-let images = document.getElementsByClassName("img");
-/**
- * This functionality captures the images by capturing each photo and two addresses with Event.
- * @param {imageIndex} index
- * @param {ColorImage} addressChange
- * @param {DefaultImage} addressDefault
- */
-function getImage(index, addressChange, addressDefault) {
-  images[index].addEventListener("mouseenter", function () {
-    images[index].src = addressChange;
-  });
-  images[index].addEventListener("mouseleave", function () {
-    images[index].src = addressDefault;
-  });
-}
-// call function
+// call function getImage
 getImage(0, "/images/Green-refahlogo.png", "/images/refahlogo.png");
 getImage(1, "/images/OrangDigakala.png", "images/digikala.png");
 getImage(2, "/images/shilaOrang.png", "images/shilal.png");
