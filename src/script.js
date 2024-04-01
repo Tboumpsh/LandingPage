@@ -78,14 +78,18 @@ function getWindowOffsetTop(element) {
 let images = document.getElementsByClassName("img");
 console.log(images[0]);
 
-function getImage(index , addressChange , addressDefault) {
+function getImage(index, addressChange, addressDefault) {
   images[index].addEventListener("mouseenter", function () {
-    this.src = addressChange;
+    images[index].src = addressChange;
   });
   images[index].addEventListener("mouseleave", function () {
-    this.src = addressDefault;
+    images[index].src = addressDefault;
   });
 }
 
-getImage(0 , '../../images/refahlogo.png' , '../../images/Green-refahlogo.png');
-
+getImage(0, "/images/Green-refahlogo.png", "/images/refahlogo.png");
+getImage(1, "/images/Green-refahlogo.png", "images/digikala.png");
+getImage(2, "/images/Green-refahlogo.png", "images/shilal.png");
+getImage(3, "/images/Green-refahlogo.png", "images/zikhoraklogo.png");
+getImage(4, "/images/Green-refahlogo.png", "images/cleanfood.png");
+getImage(5, "/images/Green-refahlogo.png", "images/sib.png");
