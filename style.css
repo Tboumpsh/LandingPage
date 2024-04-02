@@ -1215,18 +1215,36 @@ p {
         justify-content: center;
         margin: 0 auto;
     }
-    #parent{
+
+    #parent {
         width: 100%;
         margin: 0 auto;
         overflow-x: hidden;
     }
 
     #menu {
+        /* display: none; */
+        width: 100%;
+        justify-content: left;
+        padding: 1%;
+        height: 57px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #rightMenu {
         display: none;
+
+    }
+
+    #leftMenu {
+        justify-content: left;
     }
 
     .headContent {
         height: 680px;
+        margin-top: 10%;
     }
 
     .rowContent {
@@ -1259,7 +1277,7 @@ p {
     }
 
     .leftContent>.image {
-        width: 70%;
+        width: 98%;
     }
 
     .division {
@@ -1402,13 +1420,13 @@ p {
 
     .hamburger {
         cursor: pointer;
-        background-color: #333;
-        color: #fff;
+        /* background-color: #333; */
+        color: #171616;
         display: block;
         padding: 10px 15px;
         position: fixed;
-        top: 20px;
-        right: -20px;
+        top: 9px;
+        right: 10px;
         z-index: 2;
     }
 
