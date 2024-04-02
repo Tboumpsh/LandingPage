@@ -5,6 +5,8 @@ import { user } from "./user.js";
 import { publics } from "./public.js";
 import { admin } from "./admin.js";
 import { safir } from "./safir.js";
+import { createMenuMobileP } from "./mobileP.js";
+ 
 
 /** 
 **Strategy:
@@ -72,3 +74,6 @@ function getWindowOffsetTop(element) {
   }
   return offsetTop;
 }
+
+
+createMenuMobileP()
