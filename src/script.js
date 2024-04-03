@@ -7,6 +7,7 @@ import { admin } from "./admin.js";
 import { safir } from "./safir.js";
 import { createMenuMobileP } from "./mobileP.js";
 import { createMenuMobileA } from "./mobileA.js";
+import { createMenuMobileU } from "./mobileU.js";
 
 /** 
 **Strategy:
@@ -79,9 +80,10 @@ let mobileMenu = "publicM";
 
 switch (mobileMenu) {
   case "adminM":
-    createMenuMobileA()
+    createMenuMobileA();
     break;
   case "userM":
+    createMenuMobileU();
     break;
   case "publicM":
     createMenuMobileP();

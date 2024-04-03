@@ -1,8 +1,8 @@
 let contains = document.getElementById("parent");
 /**
- * 
+ *
  */
-export function createMenuMobileA() {
+export function createMenuMobileU() {
   // Create main elements
   const sidebar = document.createElement("div");
   sidebar.id = "sidebar";
@@ -21,15 +21,15 @@ export function createMenuMobileA() {
   let ul = document.createElement("ul");
   sidebar.append(ul);
 
-/**
- * 
- * @param {The number of li} amount 
- * @param {The first menu item} a 
- * @param {The secund menu item} b 
- * @param {The three menu item} c 
- * @param {The four menu item} d 
- * @param {The five menu item} e 
- */
+  /**
+   *
+   * @param {The number of li} amount
+   * @param {The first menu item} a
+   * @param {The secund menu item} b
+   * @param {The three menu item} c
+   * @param {The four menu item} d
+   * @param {The five menu item} e
+   */
   function generateList(amount, a, b, c, d, e) {
     // Get the ul element
 
@@ -43,7 +43,7 @@ export function createMenuMobileA() {
 
       // Set the text of the a tag to one of the three inputs
       /**
-       * 
+       *
        */
       switch ((i - 1) % 5) {
         case 0:
@@ -111,4 +111,4 @@ export function createMenuMobileA() {
   overlay.addEventListener("click", closeSidebar);
 }
 
-createMenuMobileA();
+createMenuMobileU();
