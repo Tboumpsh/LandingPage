@@ -1,8 +1,6 @@
 let contains = document.getElementById("parent");
 
 export function createMenuMobileP() {
-
-
   // Create main elements
   const sidebar = document.createElement("div");
   sidebar.id = "sidebar";
@@ -22,7 +20,7 @@ export function createMenuMobileP() {
   sidebar.append(ul);
 
   //
-  function generateList(amount, a, b, c) {
+  function generateList(amount, a, b, c, d, e) {
     // Get the ul element
 
     // Loop through the amount and create li elements with a tags
@@ -34,7 +32,7 @@ export function createMenuMobileP() {
       const aElement = document.createElement("a");
 
       // Set the text of the a tag to one of the three inputs
-      switch ((i - 1) % 3) {
+      switch ((i - 1) % 5) {
         case 0:
           aElement.textContent = a;
           break;
@@ -43,6 +41,12 @@ export function createMenuMobileP() {
           break;
         case 2:
           aElement.textContent = c;
+          break;
+        case 3:
+          aElement.textContent = d;
+          break;
+        case 4:
+          aElement.textContent = e;
           break;
       }
 
@@ -56,7 +60,14 @@ export function createMenuMobileP() {
     }
   }
   // Call the function with the desired amount
-  generateList(5, "salam", "byby", "roro");
+  generateList(
+    5,
+    "خانه",
+    "درخواست خرید",
+    "درخواست سفیر",
+    "درباره ما",
+    "قوانین"
+  );
 
   //
 

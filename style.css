@@ -1207,6 +1207,10 @@ p {
 
 
 @media screen and (max-width:700px) {
+
+    /* 
+    * body styes
+    */
     body {
         /* background-color: blue; */
         overflow-x: hidden;
@@ -1216,15 +1220,21 @@ p {
         margin: 0 auto;
     }
 
+    /* 
+    * parent container styles
+    */
+
     #parent {
         width: 100%;
         margin: 0 auto;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
+    /* 
+* desktop menu styles
+    */
+
     #menu {
-        /* display: none; */
-        /* width: 100%; */
         justify-content: left;
         padding: 1%;
         height: 57px;
@@ -1233,6 +1243,10 @@ p {
         z-index: 1;
     }
 
+    /* 
+* The menu consists of two left and right parts. 
+* On the right is the items that you should not show here, and the left side of the button we need.
+*/
     #rightMenu {
         display: none;
 
@@ -1242,11 +1256,20 @@ p {
         justify-content: left;
     }
 
+    /* 
+    * This is the Hero Section. 
+    * This is the highest div. 
+    * There is a brief introduction to the site.
+    */
+
     .headContent {
         height: 680px;
         margin-top: 10%;
     }
 
+    /* 
+* Your Hero Section is the two left and right parts, both inside a rowcontent and managed.
+*/
     .rowContent {
         display: flex;
         flex-direction: column-reverse;
@@ -1254,7 +1277,6 @@ p {
         width: 100%;
         padding: 1%;
         height: 707px;
-        /* gap: 30px; */
 
     }
 
@@ -1280,10 +1302,17 @@ p {
         width: 98%;
     }
 
+    /* 
+    * We have a purple fantasy separator.
+    */
+
     .division {
         display: none;
     }
 
+    /* 
+* Tonrow site service department
+    */
     .mainContent {
         width: 100%;
         height: 630px;
@@ -1294,8 +1323,20 @@ p {
         gap: 20px;
     }
 
+    /* 
+    * This section consists of two cards at the bottom and top.
+    * Which cards include two parts on the left and right and the photo and writing.
+    */
+
     .rowDown {
         display: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        width: 98%;
+        border-radius: 20px;
+        padding: 2% 2%;
+        height: 483px;
     }
 
     .rowUp {
@@ -1309,6 +1350,9 @@ p {
         height: 483px;
     }
 
+    /* 
+* description card
+*/
     .information {
         width: 136%;
         display: flex;
@@ -1318,16 +1362,17 @@ p {
         gap: 20px;
         text-align: center;
     }
-.breakArrow{
-    margin: 0;
-    height: 190px;
-}
 
-
+    /* 
+* image section
+*/
     .righUptMainContent>img {
         width: 113%;
     }
 
+    /* 
+* information section
+*/
     .lefUptMainContent {
         display: flex;
         flex-direction: column;
@@ -1337,14 +1382,36 @@ p {
         gap: 25px;
     }
 
+    /* 
+* divider section
+*/
+
+    .breakArrow {
+        margin: 0;
+        height: 190px;
+    }
+
+    /* 
+* The proposed value
+* We need all the elements of this segment.
+* And nothing is deleted, and only their Direction is column.
+*/
+
     .propertyGroup {
         height: 710px;
     }
 
+    /* 
+* tilt
+*/
     .propertyGroup>h2 {
         text-align: center;
         margin-top: 0;
     }
+
+    /* 
+    * This section has 4 cards, each expressing the benefits of Tonrow.
+    */
 
     .columnRight>.up {
         flex-direction: column;
@@ -1366,18 +1433,32 @@ p {
         padding: 4% 1%;
     }
 
+    /* 
+* There are additional descriptions and information in this sequel. 
+* That contains a title and description with <p>.
+*/
     .values {
         text-align: center;
     }
 
+    /* 
+* This is the engine shape separator that we don't have in mobile mode.
+*/
     .breakMotor {
         display: none;
     }
 
+    /* 
+* This is the map part that we don't have in mobile mode.
+*/
     .sell {
         display: none;
     }
 
+    /* 
+* In this section we have a slider of different logos.
+* In this section, this slider acts as a handmade.
+*/
     .rowBrands {
         gap: 90px;
     }
@@ -1386,15 +1467,23 @@ p {
         width: 100%;
     }
 
+    /* 
+ * title
+*/
     .brands>h2 {
         text-align: center;
     }
 
+    /* 
+* footer styles
+*/
     .footer {
         width: 100% !important;
     }
 
-    /* menu */
+    /* 
+    * menu mobile styles 
+    */
 
     #sidebar {
         position: fixed;
@@ -1415,11 +1504,22 @@ p {
     #sidebar ul {
         list-style: none;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    #sidebar>ul>li>a {
+        text-decoration: none;
+        color: rgba(140, 140, 140, 1);
+
     }
 
     #sidebar li {
         margin-bottom: 10px;
         color: #fff;
+
     }
 
     #main {
@@ -1450,11 +1550,3 @@ p {
     }
 
 }
-
-
-
-/* 
-
-
-
-*/
