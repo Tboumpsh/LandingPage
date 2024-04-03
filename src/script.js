@@ -6,7 +6,7 @@ import { publics } from "./public.js";
 import { admin } from "./admin.js";
 import { safir } from "./safir.js";
 import { createMenuMobileP } from "./mobileP.js";
- 
+import { createMenuMobileA } from "./mobileA.js";
 
 /** 
 **Strategy:
@@ -75,5 +75,17 @@ function getWindowOffsetTop(element) {
   return offsetTop;
 }
 
+let mobileMenu = "publicM";
 
-createMenuMobileP()
+switch (mobileMenu) {
+  case "adminM":
+    createMenuMobileA()
+    break;
+  case "userM":
+    break;
+  case "publicM":
+    createMenuMobileP();
+    break;
+  case "safirM":
+    break;
+}
