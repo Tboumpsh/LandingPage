@@ -8,6 +8,7 @@ import { safir } from "./safir.js";
 import { createMenuMobileP } from "./mobileP.js";
 import { createMenuMobileA } from "./mobileA.js";
 import { createMenuMobileU } from "./mobileU.js";
+import { createMenuMobileS } from "./mobileS.js";
 
 /** 
 **Strategy:
@@ -89,5 +90,6 @@ switch (mobileMenu) {
     createMenuMobileP();
     break;
   case "safirM":
+    createMenuMobileS();
     break;
 }
