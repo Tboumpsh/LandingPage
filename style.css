@@ -318,6 +318,9 @@ body {
     color: white;
 }
 
+/* 
+* focus button
+*/
 .rightContent>button:focus {
     background: rgba(43, 111, 189, 1);
 
@@ -426,6 +429,15 @@ body {
 }
 
 /* 
+* focus button
+*/
+.lefUptMainContent>button:focus {
+    border: 1.5px solid rgba(0, 61, 149, 1);
+    box-shadow: 0px 19px 34px 0px rgba(20, 17, 56, 0.14);
+    color: rgba(0, 61, 149, 1);
+}
+
+/* 
 * information style for description section
 */
 
@@ -527,15 +539,16 @@ body {
     line-height: 0;
     font-size: 16px;
 }
+
 /* 
 * focus button
 */
-/* .leftDownMainContent>button:focus {
+.leftDownMainContent>button:focus {
     border: 1.5px solid rgba(0, 61, 149, 1);
     box-shadow: 0px 19px 34px 0px rgba(20, 17, 56, 0.14);
     color: rgba(0, 61, 149, 1);
 
-} */
+}
 
 /* 
 * image section
