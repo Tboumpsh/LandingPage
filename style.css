@@ -948,7 +948,13 @@ body {
     font-family: 'Morabba';
     font-weight: 400;
     line-height: 1;
+}
 
+/* 
+* focus button
+*/
+.description>button:focus {
+    background: rgba(43, 111, 189, 1);
 }
 
 /* 
