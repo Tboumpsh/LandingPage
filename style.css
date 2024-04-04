@@ -258,8 +258,8 @@ body {
 
 .image {
     position: relative;
-    /* background-image: url('images/herobg.png'); */
-    background-color: rgba(97, 104, 255, 1);
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(97,104,255,1) 100%);
     border-radius: 61px 61px 0 0;
     background-repeat: no-repeat;
     height: 397px;
@@ -329,7 +329,7 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-    bottom:9%;
+    bottom: 9%;
     box-shadow: -3px 59px 34px 0px rgb(254 254 254);
 }
 
@@ -1260,7 +1260,7 @@ p {
 
     #parent {
         width: 100%;
-        overflow-x:clip !important;
+        overflow-x: clip !important;
     }
 
     /* 
@@ -1757,9 +1757,10 @@ p {
     * change direction
     * change height
     */
-    .brands{
+    .brands {
         height: 291px;
     }
+
     .slidBrand {
         width: 100%;
         height: 100px;
@@ -1775,7 +1776,7 @@ p {
         width: 65px;
     }
 
-    .slider{
+    .slider {
         height: 122px;
     }
 
