@@ -122,8 +122,19 @@ rightButton.addEventListener("click", function () {
   rowUp.style.display = "flex";
 });
 
+/**
+ * *
+ * *
+ * select button on desktop purple divider
+ */
 let pathB = document.getElementById("pathB");
-
-pathB.addEventListener("click", () => {
+/**
+ * Go to the bottom section by clicking the button.
+ * We used svg for this divider.
+ * So we had to perform an action on one of its paths. So I selected it with * the id and then I was able to do this by giving the click event.
+ * Its movement is also set by window.location. Go from one div to another div.
+ */
+pathB.addEventListener("click", goto);
+function goto() {
   window.location.href = "#mainContent";
-});
+}
