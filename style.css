@@ -1674,15 +1674,30 @@ p {
         z-index: 1;
     }
 
+    /*
+    * Some parts of it should be deleted according to the figure design in the mobile mode.
+* The photos are in the middle.
+* The texts were 2 and their size changed.
+* Footer size was smaller.
+* Footer's internal elements designed with Flex.
+*/
+
     .footer {
-        height: 393px;
+        height: 395px;
         gap: 30px;
         padding: 2% 0;
     }
 
+    /* 
+* We deleted the former part of the footer.
+*/
     .rowFooterup {
         display: none;
     }
+
+    /* 
+    * up section footer
+    */
 
     .footer>.rowUpMobile {
         display: flex;
@@ -1692,6 +1707,9 @@ p {
         width: 90%;
     }
 
+    /* 
+ * The content of the upper part of the footer
+*/
     .footer>.rowUpMobile>div {
         width: 40%;
         color: white;
@@ -1701,6 +1719,10 @@ p {
         align-items: flex-start;
     }
 
+    /* 
+    * down section footer
+    */
+
     .footer>.rowDownMobile {
         display: flex;
         flex-direction: row;
@@ -1709,6 +1731,9 @@ p {
         width: 90%;
     }
 
+    /* 
+ * The content of the downer part of the footer
+*/
     .footer>.rowDownMobile>div {
         width: 40%;
         color: white;
@@ -1718,6 +1743,9 @@ p {
         align-items: flex-start;
     }
 
+    /* 
+* namad logos direction
+*/
     .rowFooterDown {
         justify-content: center;
     }
