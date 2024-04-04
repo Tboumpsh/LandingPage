@@ -325,6 +325,12 @@ body {
     background: rgba(43, 111, 189, 1);
 
 }
+/* 
+* hover button
+*/
+.rightContent>button:hover {
+    box-shadow: 0px 19px 34px 0px rgba(20, 17, 56, 0.14);
+}
 
 /* 
 * image section
@@ -955,6 +961,13 @@ body {
 */
 .description>button:focus {
     background: rgba(43, 111, 189, 1);
+}
+/* 
+* hover button
+*/
+.description>button:hover {
+    box-shadow: 0px 19px 34px 0px rgba(20, 17, 56, 0.14);
+
 }
 
 /* 
