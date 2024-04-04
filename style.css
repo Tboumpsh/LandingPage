@@ -533,7 +533,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     width: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1209,6 +1209,9 @@ p {
     color: white;
 }
 
+/* 
+* mobiles item
+*/
 #sidebar {
     display: none;
 }
@@ -1225,6 +1228,9 @@ p {
     display: none;
 }
 
+.breakArrowMobile {
+    display: none;
+}
 
 @media screen and (max-width:700px) {
 
@@ -1282,7 +1288,7 @@ p {
     */
 
     .headContent {
-        height: 680px;
+        height: 726px;
         margin-top: 10%;
     }
 
@@ -1327,6 +1333,18 @@ p {
 
     .division {
         display: none;
+    }
+
+    /* 
+* A flash separator.
+* This separator, located in the mobile mode, is between the two HERO sections and services.
+*/
+
+    .breakArrowMobile {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* 
@@ -1450,7 +1468,7 @@ p {
 * image section
 */
     .righUptMainContent>img {
-        width: 113%;
+        width: 142%;
     }
 
     /* 
@@ -1461,12 +1479,13 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 64%;
         gap: 25px;
     }
 
     .rightDownMainContent>img {
-        width: 113%;
+        width: 142%;
+        height: 93%;
     }
 
     .leftDownMainContent {
