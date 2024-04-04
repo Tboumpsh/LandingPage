@@ -1209,15 +1209,22 @@ p {
     color: white;
 }
 
-#sidebar{
-    display:none ;
-}
-#overlay{
-    display:none ;
-}
-#main{
+#sidebar {
     display: none;
 }
+
+#overlay {
+    display: none;
+}
+
+#main {
+    display: none;
+}
+
+#buttons {
+    display: none;
+}
+
 
 @media screen and (max-width:700px) {
 
@@ -1327,7 +1334,7 @@ p {
     */
     .mainContent {
         width: 100%;
-        height: 630px;
+        height: 760px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1339,6 +1346,54 @@ p {
     * This section consists of two cards at the bottom and top.
     * Which cards include two parts on the left and right and the photo and writing.
     */
+    #buttons {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 98%;
+        border-radius: 8px;
+        padding: 0;
+        height: 500px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 8px 0px rgba(114, 125, 135, 0.1);
+
+    }
+
+    #buttons>button:first-of-type {
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 8px 8px 8px 0px;
+        outline: none;
+        font-family: 'Morabba';
+        color: rgba(140, 140, 140, 1);
+    }
+
+    #buttons>button:first-of-type:hover {
+        color: rgba(0, 61, 149, 1);
+        border-bottom: 4px solid rgba(0, 61, 149, 1);
+
+    }
+
+    #buttons>button:last-of-type:hover {
+        color: rgba(0, 61, 149, 1);
+        border-bottom: 4px solid rgba(0, 61, 149, 1);
+
+    }
+
+    #buttons>button:last-of-type {
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 1);
+        outline: none;
+        border: none;
+        font-family: 'Morabba';
+        color: rgba(140, 140, 140, 1);
+
+
+    }
 
     .rowDown {
         display: none;
@@ -1553,7 +1608,7 @@ p {
     }
 
     #overlay {
-        display: none ;
+        display: none;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.591);
         top: 0;
