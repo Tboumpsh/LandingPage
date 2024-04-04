@@ -1,7 +1,7 @@
 # Tonrow[LandingPage]
 ![|image](https://i.pinimg.com/originals/93/45/89/9345891bf34423552111090e47fef27d.gif)
 
-#### Landing Project of Tenro Website Based on Figma's selected plan
+#### Landing Project of Tonrow Website Based on Figma's selected plan
 
 
 <img  src="images/landing_public.png" alt="landingPrivew">
