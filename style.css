@@ -1750,5 +1750,27 @@ p {
         justify-content: center;
     }
 
+    /* 
+    * slider brand
+    * edit width image
+    * change gap
+    * change direction
+    */
+    .slidBrand {
+        width: 100%;
+    }
+
+    .rowBrands {
+        gap: 70px;
+        justify-content: center;
+    }
+
+    .rowBrands>img {
+        width: 65px;
+    }
+
+    .brands>h2 {
+        margin-bottom: 0;
+    }
 
 }
