@@ -60,7 +60,6 @@ window.addEventListener("scroll", startAnimation);
 function startAnimation() {
   let animationElement = document.getElementById("animationElement");
   let animationOffset = window.innerHeight * 2.93;
-  console.log(window.innerHeight);
 
   if (getWindowOffsetTop(animationElement) > animationOffset) {
     animationElement.style.animation = "move 18s linear";
@@ -121,4 +120,10 @@ leftButton.addEventListener("click", function () {
 rightButton.addEventListener("click", function () {
   rowDown.style.display = "none";
   rowUp.style.display = "flex";
+});
+
+let pathB = document.getElementById("pathB");
+
+pathB.addEventListener("click", () => {
+  window.location.href = "#mainContent";
 });
