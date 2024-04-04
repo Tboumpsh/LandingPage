@@ -1334,7 +1334,7 @@ p {
     */
     .mainContent {
         width: 100%;
-        height: 760px;
+        height: 766px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1343,9 +1343,11 @@ p {
     }
 
     /* 
-    * This section consists of two cards at the bottom and top.
-    * Which cards include two parts on the left and right and the photo and writing.
+* Selection of Switching buttons on mobile mode.
+* Tonrow site service cards.
+* Use Event to manage buttons. Clicking on each button will display a card and the other card will disappear.
     */
+
     #buttons {
         display: flex !important;
         flex-direction: row;
@@ -1354,12 +1356,15 @@ p {
         width: 98%;
         border-radius: 8px;
         padding: 0;
-        height: 500px;
+        height: 85px;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 2px 8px 0px rgba(114, 125, 135, 0.1);
 
     }
 
+    /* 
+* first button
+*/
     #buttons>button:first-of-type {
         width: 50%;
         height: 100%;
@@ -1371,6 +1376,9 @@ p {
         color: rgba(140, 140, 140, 1);
     }
 
+    /* 
+* style hovering
+*/
     #buttons>button:first-of-type:hover {
         color: rgba(0, 61, 149, 1);
         border-bottom: 4px solid rgba(0, 61, 149, 1);
@@ -1383,6 +1391,9 @@ p {
 
     }
 
+    /* 
+* last button
+*/
     #buttons>button:last-of-type {
         width: 50%;
         height: 100%;
@@ -1395,8 +1406,13 @@ p {
 
     }
 
+    /* 
+    * This section consists of two cards at the bottom and top.
+    * Which cards include two parts on the left and right and the photo and writing.
+    */
+
     .rowDown {
-        display: none;
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
@@ -1407,7 +1423,7 @@ p {
     }
 
     .rowUp {
-        display: flex;
+        display: none;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
@@ -1441,6 +1457,19 @@ p {
 * information section
 */
     .lefUptMainContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        gap: 25px;
+    }
+
+    .rightDownMainContent>img {
+        width: 113%;
+    }
+
+    .leftDownMainContent {
         display: flex;
         flex-direction: column;
         align-items: center;

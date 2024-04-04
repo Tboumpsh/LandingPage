@@ -101,3 +101,24 @@ switch (mobileMenu) {
     createMenuMobileS();
     break;
 }
+
+/**
+ * Selection of Switching buttons on mobile mode.
+ * Tonrow site service cards.
+ */
+let leftButton = document.getElementById("leftButton");
+let rightButton = document.getElementById("rightButton");
+let rowUp = document.getElementById("rowUp");
+let rowDown = document.getElementById("rowDown");
+/**
+ ** Using Event to manage buttons.
+ ** Clicking on each button will display a card and the other card will disappear.
+ */
+leftButton.addEventListener("click", function () {
+  rowDown.style.display = "flex";
+  rowUp.style.display = "none";
+});
+rightButton.addEventListener("click", function () {
+  rowDown.style.display = "none";
+  rowUp.style.display = "flex";
+});
