@@ -1756,21 +1756,26 @@ p {
     * change gap
     * change direction
     */
+    .brands{
+        height: 291px;
+    }
     .slidBrand {
         width: 100%;
+        height: 100px;
     }
 
     .rowBrands {
         gap: 70px;
         justify-content: center;
+        height: 118px;
     }
 
     .rowBrands>img {
         width: 65px;
     }
 
-    .brands>h2 {
-        margin-bottom: 0;
+    .slider{
+        height: 122px;
     }
 
 }
