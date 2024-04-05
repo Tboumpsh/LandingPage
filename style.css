@@ -421,7 +421,7 @@ body {
 * button style in description section
 */
 .lefUptMainContent>button {
-    width: 172px;
+    width: 204px;
     height: 44px;
     padding: 20px 24px 20px 24px;
     border-radius: 4px;
@@ -432,7 +432,13 @@ body {
     line-height: 0;
     font-size: 16px;
     color:#003D95 ;
+    display: flex;
+    align-items: center
 
+}
+.lefUptMainContent>button > svg {
+    width: 21px;
+    margin-right: 5px;
 }
 
 /* 
@@ -536,7 +542,7 @@ body {
 */
 
 .leftDownMainContent>button {
-    width: 172px;
+    width: 204px;
     height: 44px;
     padding: 20px 24px 20px 24px;
     border-radius: 4px;
@@ -546,6 +552,12 @@ body {
     line-height: 0;
     font-size: 16px;
     color:#003D95 ;
+    display: flex;
+    align-items: center
+}
+.leftDownMainContent>button > svg {
+    width: 21px;
+    margin-right: 5px;
 }
 
 /* 
