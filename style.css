@@ -1,11 +1,12 @@
 /* 
+* TODO:
 * The styles in this project are going to be completely managed with display flex, so you might see it a lot.
 * This project has a lot of games with css and animations.
 * So don't be surprised if you see a keyframe below.
 * The styles are completely understandable and explained as much as possible.
-*IRANsans font is used in this design.
-* Added to the style using impory.
-* These styles and designs are predefined in Figma.
+! IRANsans font is used in this design.
+* Added to the style using import.
+! These styles and designs are predefined in Figma.
 */
 
 /* 
@@ -177,6 +178,7 @@ body {
     outline: none;
     line-height: 1;
 }
+
 /* 
 * button statues
 */
@@ -1687,7 +1689,7 @@ p {
         height: 100%;
         background: linear-gradient(152.34deg, #FFFFFF -0.48%, #E8F2FF 160.87%);
         box-shadow: 0px 8px 33px 0px rgba(255, 255, 255, 0.13);
-        padding: 20px;
+        padding: 12% 6%;
         transition: right 0.3s;
         z-index: 2;
         left: 0;
@@ -1702,7 +1704,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 25px;
+        gap: 30px;
     }
 
     #sidebar>ul>li>a {
@@ -1743,6 +1745,13 @@ p {
         width: 100%;
         height: 100%;
         z-index: 1;
+    }
+
+    #sidebar>img {
+        border-bottom: 2px solid #003D951A;
+        width: 150px;
+        height: 60px;
+        margin-bottom: 30%;
     }
 
     /*
