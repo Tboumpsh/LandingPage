@@ -1,4 +1,19 @@
 /**
+ ** Name of the programmer: Fatemeh Satouri
+ ** Name of the group: My Nowruz Adventures
+ ** Challenge:
+ * Tonrow website landing design
+ ** Figma design address:
+ * https://www.figma.com/file/9sjWhI5IItbPYJzWvT0pyV/Tonrow?type=design&node-id=35%3A45&mode=dev&t=pWy26QHKSFGtJiny-1
+ ** Project start date:
+ * March 18, 2024
+ ** Project end date:
+ * April 5, 2024
+ ** contact us:
+ * navayearamm@gmail.com
+ */
+
+/**
  * import files
  */
 import { user } from "./user.js";
