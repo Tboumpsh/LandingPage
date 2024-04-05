@@ -861,11 +861,11 @@ body {
     }
 
     20% {
-        transform: translateX(1590px);
+        transform: translateX(2000px);
     }
 
     100% {
-        transform: translateX(1590px);
+        transform: translateX(2000px);
     }
 }
 
