@@ -1,5 +1,11 @@
+// parent div
 let contains = document.getElementById("parent");
-
+/**
+ * This menu is mobile.
+ * This menu can be set manually in the main script page in its own switch case.
+ *  We have two menus, one for desktop and one for mobile.
+ *  This menu is in hamburger mode and it opens as a drop-down menu by clicking on it.
+ */
 export function createMenuMobileP() {
   // Create main elements
   const sidebar = document.createElement("div");
@@ -15,14 +21,21 @@ export function createMenuMobileP() {
 
   const overlay = document.createElement("div");
   overlay.id = "overlay";
-
+  // create ul
   let ul = document.createElement("ul");
   sidebar.append(ul);
+  /**
+   *
+   * @param {The number of li} amount
+   * @param {The first menu item} a
+   * @param {The secund menu item} b
+   * @param {The three menu item} c
+   * @param {The four menu item} d
+   * @param {The five menu item} e
+   */
 
-  //
+  //create li and a by function
   function generateList(amount, a, b, c, d, e) {
-    // Get the ul element
-
     // Loop through the amount and create li elements with a tags
     for (let i = 1; i <= amount; i++) {
       // Create li element
@@ -30,7 +43,9 @@ export function createMenuMobileP() {
 
       // Create a element
       const aElement = document.createElement("a");
-
+      /**
+       * It reads the elements in the array one by one and puts a in it.
+       */
       // Set the text of the a tag to one of the three inputs
       switch ((i - 1) % 5) {
         case 0:
@@ -69,8 +84,6 @@ export function createMenuMobileP() {
     "قوانین"
   );
 
-  //
-
   // Append main elements to the body
   contains.appendChild(sidebar);
   contains.appendChild(main);
@@ -97,5 +110,5 @@ export function createMenuMobileP() {
 
   overlay.addEventListener("click", closeSidebar);
 }
-
+// call function
 createMenuMobileP();
