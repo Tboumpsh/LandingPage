@@ -254,7 +254,7 @@ body {
 */
 
 .leftContent {
-    width: 52%;
+    width: 36%;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -298,7 +298,7 @@ body {
 */
 
 .rightContent {
-    width: 50%;
+    width: 36%;
     height: 400px;
     display: flex;
     flex-direction: column;
