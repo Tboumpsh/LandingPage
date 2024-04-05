@@ -1089,7 +1089,7 @@ body {
     justify-content: left;
     width: 99%;
     height: 200px;
-    gap: 212px;
+    gap: 250px;
 
 }
 
@@ -1098,12 +1098,13 @@ body {
 * be hover image is color
 */
 
+/* 
+* image is gray color
+*/
 .rowBrands>img {
-    /* 
-    * image is gray color
-    */
     filter: grayscale(100%);
     flex-shrink: 0;
+    width: 150px;
 }
 
 .rowBrands>img:hover {
@@ -1712,8 +1713,9 @@ p {
         color: rgba(140, 140, 140, 1);
 
     }
+
     #sidebar>ul>li>a:hover {
-       color: #003D95;
+        color: #003D95;
 
     }
 
