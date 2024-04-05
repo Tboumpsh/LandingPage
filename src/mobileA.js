@@ -25,10 +25,10 @@ export function createMenuMobileA() {
   // create ul
   let ul = document.createElement("ul");
   sidebar.append(ul);
-// logo image header menu 
-/**
- * ! add logo to header slider menu
- */
+  // logo image header menu
+  /**
+   * ! add logo to header slider menu
+   */
   let imgLogo = document.createElement("img");
   imgLogo.src = "/images/tonrow.svg";
   sidebar.prepend(imgLogo);
@@ -40,10 +40,11 @@ export function createMenuMobileA() {
    * @param {The three menu item} c
    * @param {The four menu item} d
    * @param {The five menu item} e
+   * @param {The six menu item} f
    */
 
   //create li and a by function
-  function generateList(amount, a, b, c, d, e) {
+  function generateList(amount, a, b, c, d, e, f) {
     // Loop through the amount and create li elements with a tags
     for (let i = 1; i <= amount; i++) {
       // Create li element
@@ -56,7 +57,7 @@ export function createMenuMobileA() {
       /**
        * It reads the elements in the array one by one and puts a in it.
        */
-      switch ((i - 1) % 5) {
+      switch ((i - 1) % 6) {
         case 0:
           aElement.textContent = a;
           break;
@@ -71,6 +72,9 @@ export function createMenuMobileA() {
           break;
         case 4:
           aElement.textContent = e;
+          break;
+        case 5:
+          aElement.textContent = f;
           break;
       }
 
@@ -88,8 +92,9 @@ export function createMenuMobileA() {
     5,
     "خانه",
     " داشبورد",
-    "درخواست سفیر",
-    "درخواست خرید",
+    "مدیریت سفارشات ",
+    "مدیریت سفیران",
+    "لیست جابجایی ها",
     "خروج از حساب"
   );
 
