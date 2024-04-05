@@ -25,6 +25,14 @@ export function createMenuMobileS() {
   let ul = document.createElement("ul");
   sidebar.append(ul);
 
+  // logo image header menu
+  /**
+   * ! add logo to header slider menu
+   */
+  let imgLogo = document.createElement("img");
+  imgLogo.src = "/images/tonrow.svg";
+  sidebar.prepend(imgLogo);
+
   /**
    *
    * @param {The number of li} amount
