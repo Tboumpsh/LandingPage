@@ -58,8 +58,8 @@ export function safir() {
      */
     createNode("div", "rightMenu", div);
     createNode("div", "leftMenu", div);
-    createNode("button", "btnL", leftMenu, "click");
-    createNode("button", "btnR", leftMenu, "click");
+    createNode("button", "btnL", leftMenu, "");
+    createNode("button", "btnR", leftMenu, "");
   
     // create image
     /**
@@ -79,8 +79,8 @@ export function safir() {
      * In this function, it puts them into one presentation by taking two inputs
      * The Code of a Loop to Create Four Links. In Each It of the Loop, a new link element is creating the JavaScript createElement Function. The link element is then added to the webpage, Specification to the Rightmenu. The Text Content of the Link is Set to One of the Input Values, in Order. So, the first link will show the value of @param {a} home
      * the second link will show of @param {a} requestS
-     * the first link will show the value of @param {a} requestSHOP
-     * and the first link will show the value of @param {a} call.
+     * the first link will show the value of @param {b} requestSHOP
+     * and the first link will show the value of @param {c} call.
      */
     function createA(home, request, myClub, notif) {
       let values = [home, request, myClub, notif];

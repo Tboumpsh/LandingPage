@@ -4,7 +4,6 @@
  * On this page, the menu has two buttons on the left, and the only difference is with the Published Function. This function is for UserPage.
  */
 
-
 let contains = document.getElementById("parent");
 export function user() {
   // create main div
@@ -60,8 +59,8 @@ export function user() {
    */
   createNode("div", "rightMenu", div);
   createNode("div", "leftMenu", div);
-  createNode("button", "btnL", leftMenu, "🔔");
-  createNode("button", "btnR", leftMenu, "🕢");
+  createNode("button", "btnL", leftMenu, "");
+  createNode("button", "btnR", leftMenu, "");
 
   // create image
   /**
@@ -99,5 +98,3 @@ export function user() {
    */
   return div;
 }
-
-

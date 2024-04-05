@@ -59,8 +59,8 @@ export function admin() {
      */
     createNode("div", "rightMenu", div);
     createNode("div", "leftMenu", div);
-    createNode("button", "btnL", leftMenu, "click");
-    createNode("button", "btnR", leftMenu, "click");
+    createNode("button", "btnL", leftMenu, "");
+    createNode("button", "btnR", leftMenu, "");
   
     // create image
     /**
