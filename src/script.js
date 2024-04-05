@@ -99,7 +99,7 @@ function getWindowOffsetTop(element) {
  *! And to adjust the mobile menu manually.
  *! And this variable takes the name of the menus in Switch Case.
  */
-let mobileMenu = "safirM";
+let mobileMenu = "publicM";
 /**
  *TODO: With this switch Case structure we can manually adjust the mobile menu.
  ** We can display it by putting the name of each menu in the mobile menu variable.

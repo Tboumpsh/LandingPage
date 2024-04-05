@@ -42,7 +42,7 @@ export function createMenuMobileS() {
    * @param {The four menu item} d
    * @param {The five menu item} e
    */
-  function generateList(amount, a, b, c, d, e , f) {
+  function generateList(amount, a, b, c, d, e, f) {
     // Loop through the amount and create li elements with a tags
     for (let i = 1; i <= amount; i++) {
       // Create li element

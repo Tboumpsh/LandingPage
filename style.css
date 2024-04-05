@@ -1711,6 +1711,7 @@ p {
     #sidebar>ul>li>a {
         text-decoration: none;
         color: rgba(140, 140, 140, 1);
+        font-weight: 500;
 
     }
 
