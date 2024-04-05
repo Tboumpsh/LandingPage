@@ -177,6 +177,16 @@ body {
     outline: none;
     line-height: 1;
 }
+/* 
+* button statues
+*/
+#leftMenu>button:hover {
+    box-shadow: 0px 19px 34px 0px #14113824;
+}
+
+#leftMenu>button:focus {
+    background: #2B6FBD;
+}
 
 /* 
 * In user, safir and admin menu style buttons
@@ -325,6 +335,7 @@ body {
     background: rgba(43, 111, 189, 1);
 
 }
+
 /* 
 * hover button
 */
@@ -431,12 +442,12 @@ body {
     font-weight: 400;
     line-height: 0;
     font-size: 16px;
-    color:#003D95 ;
+    color: #003D95;
     display: flex;
     align-items: center
-
 }
-.lefUptMainContent>button > svg {
+
+.lefUptMainContent>button>svg {
     width: 21px;
     margin-right: 5px;
 }
@@ -551,11 +562,12 @@ body {
     font-weight: 400;
     line-height: 0;
     font-size: 16px;
-    color:#003D95 ;
+    color: #003D95;
     display: flex;
     align-items: center
 }
-.leftDownMainContent>button > svg {
+
+.leftDownMainContent>button>svg {
     width: 21px;
     margin-right: 5px;
 }
@@ -976,6 +988,7 @@ body {
 .description>button:focus {
     background: rgba(43, 111, 189, 1);
 }
+
 /* 
 * hover button
 */
