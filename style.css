@@ -1712,6 +1712,10 @@ p {
         color: rgba(140, 140, 140, 1);
 
     }
+    #sidebar>ul>li>a:hover {
+       color: #003D95;
+
+    }
 
     #sidebar li {
         margin-bottom: 10px;
