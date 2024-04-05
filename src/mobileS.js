@@ -42,7 +42,7 @@ export function createMenuMobileS() {
    * @param {The four menu item} d
    * @param {The five menu item} e
    */
-  function generateList(amount, a, b, c, d, e) {
+  function generateList(amount, a, b, c, d, e , f) {
     // Loop through the amount and create li elements with a tags
     for (let i = 1; i <= amount; i++) {
       // Create li element
@@ -55,7 +55,7 @@ export function createMenuMobileS() {
       /**
        * It reads the elements in the array one by one and puts a in it.
        */
-      switch ((i - 1) % 5) {
+      switch ((i - 1) % 6) {
         case 0:
           aElement.textContent = a;
           break;
@@ -71,6 +71,9 @@ export function createMenuMobileS() {
         case 4:
           aElement.textContent = e;
           break;
+        case 5:
+          aElement.textContent = f;
+          break;
       }
 
       aElement.setAttribute("href", "#");
@@ -84,11 +87,12 @@ export function createMenuMobileS() {
   }
   // Call the function with the desired amount
   generateList(
-    5,
+    6,
     "خانه",
     " داشبورد",
-    "درخواست سفیر",
-    "درخواست خرید",
+    "درخواست ها",
+    "کلاب من",
+    " اطلاعیه",
     "خروج از حساب"
   );
 
