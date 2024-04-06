@@ -43,23 +43,35 @@ sections.
 */
 
 // ! Building a flag that the menu you see depends on
-let menu = "user";
+let menu = "admin";
 /**
  * TODO: By specifying a variable and using the switch case structure, we can manually set when and what menu to display. Just set the variable value with the name of the menu you want.
+ */
+//FIXME:
+/**
+ ** This is a subscriber for the mobile menu.
+ *! And to adjust the mobile menu manually.
+ *! And this variable takes the name of the menus in Switch Case.
+ *TODO: With this switch Case structure we can manually adjust the mobile menu.
+ ** We can display it by putting the name of each menu in the mobile menu variable.
  */
 
 switch (menu) {
   case "admin":
     admin();
+    createMenuMobileA();
     break;
   case "user":
     user();
+    createMenuMobileU();
     break;
   case "public":
     publics();
+    createMenuMobileP();
     break;
   case "safir":
     safir();
+    createMenuMobileS();
     break;
 }
 
@@ -75,7 +87,7 @@ window.addEventListener("scroll", startAnimation);
 
 function startAnimation() {
   let animationElement = document.getElementById("animationElement");
-  let animationOffset = window.innerHeight * 2.40;
+  let animationOffset = window.innerHeight * 2.4;
 
   if (getWindowOffsetTop(animationElement) > animationOffset) {
     animationElement.style.animation = "move 18s linear";
@@ -91,34 +103,6 @@ function getWindowOffsetTop(element) {
   }
   return offsetTop;
 }
-
-
-//FIXME:
-/**
- ** This is a subscriber for the mobile menu.
- *! And to adjust the mobile menu manually.
- *! And this variable takes the name of the menus in Switch Case.
- */
-let mobileMenu = "userM";
-/**
- *TODO: With this switch Case structure we can manually adjust the mobile menu.
- ** We can display it by putting the name of each menu in the mobile menu variable.
- */
-switch (mobileMenu) {
-  case "adminM":
-    createMenuMobileA();
-    break;
-  case "userM":
-    createMenuMobileU();
-    break;
-  case "publicM":
-    createMenuMobileP();
-    break;
-  case "safirM":
-    createMenuMobileS();
-    break;
-}
-
 
 //FIXME:
 /**
@@ -141,7 +125,6 @@ rightButton.addEventListener("click", function () {
   rowDown.style.display = "none";
   rowUp.style.display = "flex";
 });
-
 
 //FIXME:
 /**
