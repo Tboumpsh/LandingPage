@@ -229,13 +229,14 @@ body {
 * At the bottom there is a purple box that is placed on the photo. I will mention its code strategy in its own section.
 */
 .headContent {
-    width: 100%;
+    width: 95%;
     height: 630px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin-top: 4%;
+    margin: 5% auto;
 }
 
 /* 
@@ -249,10 +250,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 96%;
     padding: 1%;
     height: 500px;
-    /* gap: 30px; */
+    gap: 90px;
 
 }
 
@@ -261,7 +262,7 @@ body {
 */
 
 .leftContent {
-    width: 36%;
+    width: 30%;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -276,7 +277,6 @@ body {
 */
 
 .image {
-    position: relative;
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(97, 104, 255, 1) 100%);
     border-radius: 61px 61px 0 0;
@@ -296,8 +296,8 @@ body {
 */
 
 .image>img {
-    position: absolute;
     height: 421px;
+
 }
 
 /* 
@@ -305,7 +305,7 @@ body {
 */
 
 .rightContent {
-    width: 36%;
+    width: 30%;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -1321,7 +1321,7 @@ p {
     display: none;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
 
     /* 
     * body styes

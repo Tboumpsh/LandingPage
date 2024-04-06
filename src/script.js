@@ -43,7 +43,7 @@ sections.
 */
 
 // ! Building a flag that the menu you see depends on
-let menu = "public";
+let menu = "user";
 /**
  * TODO: By specifying a variable and using the switch case structure, we can manually set when and what menu to display. Just set the variable value with the name of the menu you want.
  */
@@ -99,7 +99,7 @@ function getWindowOffsetTop(element) {
  *! And to adjust the mobile menu manually.
  *! And this variable takes the name of the menus in Switch Case.
  */
-let mobileMenu = "publicM";
+let mobileMenu = "userM";
 /**
  *TODO: With this switch Case structure we can manually adjust the mobile menu.
  ** We can display it by putting the name of each menu in the mobile menu variable.
